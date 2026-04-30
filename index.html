@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CCG — Chal Chale Ghumnee | Discover India Beyond the Usual</title>
+    <meta name="description" content="Explore curated travel experiences across India with CCG. From Himalayan adventures to Kerala backwaters, discover offbeat and romantic escapes.">
+    <meta property="og:title" content="CCG — Chal Chale Ghumnee | Discover India">
+    <meta property="og:description" content="Curated travel experiences to India's most breathtaking destinations.">
+    <meta property="og:type" content="website">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- ===== HEADER ===== -->
+    <header class="header" id="header">
+        <div class="container header__inner">
+            <a href="index.html" class="header__logo" id="logo">
+                <img src="images/logo.png" alt="CCG - Chal Chale Ghumnee" class="logo__img">
+            </a>
+            <nav class="header__nav" id="nav-menu">
+                <ul class="nav__list">
+                    <li><a href="index.html" class="nav__link active">Home</a></li>
+                    <li><a href="trips.html" class="nav__link">Trips</a></li>
+                    <li><a href="offbeat.html" class="nav__link">Offbeat</a></li>
+                    <li><a href="honeymoon.html" class="nav__link">Honeymoon</a></li>
+                    <li><a href="about.html" class="nav__link">About</a></li>
+                    <li><a href="contact.html" class="nav__link">Contact</a></li>
+                </ul>
+            </nav>
+            <a href="contact.html" class="header__cta btn btn--primary">Plan Your Trip</a>
+            <button class="header__hamburger" id="hamburger" aria-label="Toggle navigation menu">
+                <span class="hamburger__line"></span>
+                <span class="hamburger__line"></span>
+                <span class="hamburger__line"></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- ===== HERO ===== -->
+    <section class="hero" id="hero">
+        <div class="hero__bg">
+            <img src="images/hero-bg.png" alt="Breathtaking Himalayan mountain landscape" class="hero__bg-img">
+            <div class="hero__overlay"></div>
+        </div>
+        <div class="container hero__content">
+            <p class="hero__subtitle fade-up">Chal Chale Ghumnee ✦</p>
+            <h1 class="hero__title fade-up">Discover India<br><span class="hero__title-highlight">Beyond the Usual</span></h1>
+            <p class="hero__desc fade-up">Curated travel experiences to India's most breathtaking destinations — from hidden villages to pristine coastlines.</p>
+            <div class="hero__search fade-up" id="search-bar">
+                <div class="search__field">
+                    <label for="destination" class="search__label">Destination</label>
+                    <select id="destination" class="search__input">
+                        <option value="">Where to?</option>
+                        <option value="himachal">Himachal Pradesh</option>
+                        <option value="kerala">Kerala</option>
+                        <option value="rajasthan">Rajasthan</option>
+                        <option value="goa">Goa</option>
+                        <option value="ladakh">Ladakh</option>
+                        <option value="meghalaya">Meghalaya</option>
+                    </select>
+                </div>
+                <div class="search__divider"></div>
+                <div class="search__field">
+                    <label for="duration" class="search__label">Duration</label>
+                    <select id="duration" class="search__input">
+                        <option value="">How long?</option>
+                        <option value="3">3-5 Days</option>
+                        <option value="7">5-7 Days</option>
+                        <option value="10">7-10 Days</option>
+                        <option value="14">10-14 Days</option>
+                    </select>
+                </div>
+                <div class="search__divider"></div>
+                <div class="search__field">
+                    <label for="budget" class="search__label">Budget</label>
+                    <select id="budget" class="search__input">
+                        <option value="">Price range</option>
+                        <option value="budget">₹10K - ₹25K</option>
+                        <option value="mid">₹25K - ₹50K</option>
+                        <option value="premium">₹50K - ₹1L</option>
+                        <option value="luxury">₹1L+</option>
+                    </select>
+                </div>
+                <button class="search__btn btn btn--accent" id="search-btn" onclick="window.location.href='trips.html'">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+                    Explore
+                </button>
+            </div>
+            <div class="hero__stats fade-up">
+                <div class="stat">
+                    <span class="stat__number" data-target="500">0</span><span class="stat__plus">+</span>
+                    <span class="stat__label">Happy Travelers</span>
+                </div>
+                <div class="stat">
+                    <span class="stat__number" data-target="50">0</span><span class="stat__plus">+</span>
+                    <span class="stat__label">Destinations</span>
+                </div>
+                <div class="stat">
+                    <span class="stat__number" data-target="100">0</span><span class="stat__plus">%</span>
+                    <span class="stat__label">Customizable</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero__scroll">
+            <div class="scroll__mouse"><div class="scroll__wheel"></div></div>
+            <span class="scroll__text">Scroll to explore</span>
+        </div>
+    </section>
+
+    <!-- ===== FEATURED JOURNEYS ===== -->
+    <section class="journeys section" id="journeys">
+        <div class="container">
+            <div class="section__header fade-up">
+                <span class="section__tag">Featured Trips</span>
+                <h2 class="section__title">Handcrafted <span class="highlight">Journeys</span></h2>
+                <p class="section__desc">Each trip is thoughtfully designed to immerse you in the culture, nature, and soul of India.</p>
+            </div>
+            <div class="journeys__grid">
+                <article class="journey-card fade-up">
+                    <div class="journey-card__img-wrap">
+                        <img src="images/himalayan-adventure.png" alt="Trekking in the Himalayas" class="journey-card__img" loading="lazy">
+                        <span class="journey-card__badge">Popular</span>
+                    </div>
+                    <div class="journey-card__body">
+                        <div class="journey-card__meta">
+                            <span class="journey-card__duration"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 7 Days</span>
+                            <span class="journey-card__price">₹35,000</span>
+                        </div>
+                        <h3 class="journey-card__title">Himalayan Adventure</h3>
+                        <p class="journey-card__desc">Trek through pristine valleys, camp under starlit skies, and experience the majesty of the world's highest peaks.</p>
+                        <a href="trips.html" class="journey-card__link">View Details <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+                    </div>
+                </article>
+                <article class="journey-card fade-up">
+                    <div class="journey-card__img-wrap">
+                        <img src="images/kerala-backwaters.png" alt="Kerala Backwaters houseboat" class="journey-card__img" loading="lazy">
+                        <span class="journey-card__badge badge--green">Bestseller</span>
+                    </div>
+                    <div class="journey-card__body">
+                        <div class="journey-card__meta">
+                            <span class="journey-card__duration"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 5 Days</span>
+                            <span class="journey-card__price">₹28,000</span>
+                        </div>
+                        <h3 class="journey-card__title">Kerala Backwaters</h3>
+                        <p class="journey-card__desc">Cruise through serene backwaters on a houseboat, explore spice gardens, and relax on Malabar's golden shores.</p>
+                        <a href="trips.html" class="journey-card__link">View Details <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+                    </div>
+                </article>
+                <article class="journey-card fade-up">
+                    <div class="journey-card__img-wrap">
+                        <img src="images/rajasthan-heritage.png" alt="Rajasthani palace" class="journey-card__img" loading="lazy">
+                        <span class="journey-card__badge badge--cyan">New</span>
+                    </div>
+                    <div class="journey-card__body">
+                        <div class="journey-card__meta">
+                            <span class="journey-card__duration"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 8 Days</span>
+                            <span class="journey-card__price">₹42,000</span>
+                        </div>
+                        <h3 class="journey-card__title">Rajasthan Heritage</h3>
+                        <p class="journey-card__desc">Walk through ancient forts, ride camels across golden dunes, and witness the vibrant culture of royal Rajasthan.</p>
+                        <a href="trips.html" class="journey-card__link">View Details <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+                    </div>
+                </article>
+            </div>
+            <div class="section__cta fade-up">
+                <a href="trips.html" class="btn btn--primary btn--lg">View All Trips →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== OFFBEAT TEASER ===== -->
+    <section class="offbeat section" id="offbeat">
+        <div class="container offbeat__inner">
+            <div class="offbeat__image fade-up">
+                <img src="images/offbeat-travel.png" alt="Offbeat destination" loading="lazy">
+                <div class="offbeat__image-accent"></div>
+            </div>
+            <div class="offbeat__content fade-up">
+                <span class="section__tag">Go Beyond</span>
+                <h2 class="section__title">Offbeat India<br><span class="highlight">Awaits You</span></h2>
+                <p class="offbeat__text">Step away from crowded tourist spots and discover India's hidden treasures. From the living root bridges of Meghalaya to the snow-white deserts of Kutch.</p>
+                <ul class="offbeat__features">
+                    <li class="offbeat__feature"><span class="feature__icon">🏔️</span><div><strong>Unexplored Trails</strong><p>Remote Himalayan villages & secret valleys</p></div></li>
+                    <li class="offbeat__feature"><span class="feature__icon">🌿</span><div><strong>Eco-Conscious Travel</strong><p>Sustainable stays & community-based tourism</p></div></li>
+                    <li class="offbeat__feature"><span class="feature__icon">🗺️</span><div><strong>Local Experiences</strong><p>Authentic food, festivals & cultural immersion</p></div></li>
+                </ul>
+                <a href="offbeat.html" class="btn btn--primary">Explore Offbeat →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== ROMANTIC ESCAPES TEASER ===== -->
+    <section class="romantic section" id="romantic">
+        <div class="container">
+            <div class="section__header fade-up">
+                <span class="section__tag">Honeymoon & Couples</span>
+                <h2 class="section__title">Romantic <span class="highlight">Escapes</span></h2>
+                <p class="section__desc">Unforgettable experiences designed for two. Let love lead the way.</p>
+            </div>
+            <div class="romantic__grid">
+                <article class="romantic-card fade-up"><div class="romantic-card__img-wrap"><img src="images/beach-bliss.png" alt="Beach sunset" class="romantic-card__img" loading="lazy"><div class="romantic-card__overlay"><h3 class="romantic-card__title">Beach Bliss</h3><p class="romantic-card__subtitle">Goa & Andaman</p><span class="romantic-card__price">From ₹22,000</span></div></div></article>
+                <article class="romantic-card fade-up"><div class="romantic-card__img-wrap"><img src="images/mountain-serenity.png" alt="Mountain cabin" class="romantic-card__img" loading="lazy"><div class="romantic-card__overlay"><h3 class="romantic-card__title">Mountain Serenity</h3><p class="romantic-card__subtitle">Manali & Shimla</p><span class="romantic-card__price">From ₹18,000</span></div></div></article>
+                <article class="romantic-card fade-up"><div class="romantic-card__img-wrap"><img src="images/royal-heritage.png" alt="Royal palace" class="romantic-card__img" loading="lazy"><div class="romantic-card__overlay"><h3 class="romantic-card__title">Royal Heritage</h3><p class="romantic-card__subtitle">Udaipur & Jaisalmer</p><span class="romantic-card__price">From ₹45,000</span></div></div></article>
+            </div>
+            <div class="section__cta fade-up">
+                <a href="honeymoon.html" class="btn btn--primary btn--lg">View Honeymoon Packages →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== TESTIMONIALS ===== -->
+    <section class="testimonials section" id="testimonials">
+        <div class="container">
+            <div class="section__header fade-up">
+                <span class="section__tag">What They Say</span>
+                <h2 class="section__title">Traveler <span class="highlight">Stories</span></h2>
+            </div>
+            <div class="testimonials__grid">
+                <article class="testimonial-card fade-up">
+                    <div class="testimonial-card__stars">★★★★★</div>
+                    <p class="testimonial-card__text">"Our Kerala trip was absolutely magical! Every detail was perfectly planned. The houseboat experience was the highlight of our honeymoon."</p>
+                    <div class="testimonial-card__author"><div class="testimonial-card__avatar" style="background: linear-gradient(135deg, #2e8b57, #11c1e6);"><span>AP</span></div><div><strong class="testimonial-card__name">Ananya & Prateek</strong><span class="testimonial-card__trip">Kerala Backwaters • Dec 2025</span></div></div>
+                </article>
+                <article class="testimonial-card fade-up">
+                    <div class="testimonial-card__stars">★★★★★</div>
+                    <p class="testimonial-card__text">"The Himalayan trek was life-changing. CCG curated an experience that was challenging yet so rewarding. Can't wait for the next adventure!"</p>
+                    <div class="testimonial-card__author"><div class="testimonial-card__avatar" style="background: linear-gradient(135deg, #fde72a, #2e8b57);"><span>RK</span></div><div><strong class="testimonial-card__name">Rohit Kumar</strong><span class="testimonial-card__trip">Himalayan Adventure • Oct 2025</span></div></div>
+                </article>
+                <article class="testimonial-card fade-up">
+                    <div class="testimonial-card__stars">★★★★★</div>
+                    <p class="testimonial-card__text">"Meghalaya was on our bucket list for years. CCG made it possible with their offbeat expertise. The living root bridges were surreal!"</p>
+                    <div class="testimonial-card__author"><div class="testimonial-card__avatar" style="background: linear-gradient(135deg, #11c1e6, #fde72a);"><span>SM</span></div><div><strong class="testimonial-card__name">Sneha & Meera</strong><span class="testimonial-card__trip">Meghalaya Offbeat • Sep 2025</span></div></div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CTA BANNER ===== -->
+    <section class="cta-banner" id="cta">
+        <div class="cta-banner__bg"></div>
+        <div class="container cta-banner__inner fade-up">
+            <h2 class="cta-banner__title">Let Us Plan Your<br><span class="cta-banner__highlight">Perfect Trip</span></h2>
+            <p class="cta-banner__desc">Tell us your dream destination, budget, and dates — we'll craft a personalized itinerary just for you.</p>
+            <div class="cta-banner__actions">
+                <a href="contact.html" class="btn btn--accent btn--lg">Start Planning</a>
+                <a href="tel:+917042869366" class="btn btn--outline btn--lg">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.12.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.58 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                    Call Us
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer" id="contact-footer">
+        <div class="container footer__inner">
+            <div class="footer__brand">
+                <a href="index.html" class="footer__logo">
+                    <img src="images/logo.png" alt="CCG" class="footer__logo-img">
+                </a>
+                <p class="footer__tagline">Chal Chale Ghumnee — Crafting unforgettable travel experiences across India.</p>
+                <div class="footer__social">
+                    <a href="#" class="social__link" aria-label="Instagram"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+                    <a href="#" class="social__link" aria-label="Facebook"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+                    <a href="#" class="social__link" aria-label="YouTube"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19.1c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.43z"/><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"/></svg></a>
+                </div>
+            </div>
+            <div class="footer__links">
+                <h4 class="footer__heading">Quick Links</h4>
+                <ul>
+                    <li><a href="trips.html">All Trips</a></li>
+                    <li><a href="offbeat.html">Offbeat Destinations</a></li>
+                    <li><a href="honeymoon.html">Honeymoon Packages</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer__links">
+                <h4 class="footer__heading">Destinations</h4>
+                <ul>
+                    <li><a href="trips.html">Himachal Pradesh</a></li>
+                    <li><a href="trips.html">Kerala</a></li>
+                    <li><a href="trips.html">Rajasthan</a></li>
+                    <li><a href="trips.html">Ladakh</a></li>
+                    <li><a href="trips.html">Meghalaya</a></li>
+                </ul>
+            </div>
+            <div class="footer__contact">
+                <h4 class="footer__heading">Get in Touch</h4>
+                <ul>
+                    <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg><a href="mailto:chalchaleghumnee@gmail.com">chalchaleghumnee@gmail.com</a></li>
+                    <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.12.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.58 2.81.7A2 2 0 0 1 22 16.92z"/></svg><a href="tel:+917042869366">+91 70428 69366</a></li>
+                    <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span>New Delhi, India</span></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <div class="container footer__bottom-inner">
+                <p>© 2026 CCG — Chal Chale Ghumnee. All rights reserved.</p>
+                <div class="footer__bottom-links"><a href="#">Privacy Policy</a><a href="#">Terms of Service</a></div>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
