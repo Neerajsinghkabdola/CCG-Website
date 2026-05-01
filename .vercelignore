@@ -1,0 +1,14 @@
+# Ignore macOS files
+.DS_Store
+
+# Ignore Next.js artifacts (no longer used)
+src/
+next.config.ts
+tsconfig.json
+postcss.config.mjs
+node_modules/
+.next/
+
+# Ignore dev files
+setup.sh
+README.md
