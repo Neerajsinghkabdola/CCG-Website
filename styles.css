@@ -1368,7 +1368,7 @@ ul {
 
 /* Logo Image */
 .logo__img {
-    height: 150px;
+    height: 60px;
     width: auto;
     object-fit: contain;
     transition: var(--transition);
@@ -1376,11 +1376,11 @@ ul {
 
 .header.scrolled .logo__img,
 .scrolled-always .logo__img {
-    height: 90px;
+    height: 50px;
 }
 
 .footer__logo-img {
-    height: 150px;
+    height: 80px;
     width: auto;
     object-fit: contain;
     filter: brightness(1.1);
