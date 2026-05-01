@@ -277,26 +277,7 @@ ul {
     z-index: 1001;
 }
 
-.logo__icon {
-    font-size: 1.4rem;
-    color: var(--clr-accent);
-}
 
-.logo__text {
-    font-family: var(--ff-heading);
-    font-size: var(--fs-xl);
-    font-weight: 700;
-    color: var(--clr-white);
-    transition: var(--transition);
-}
-
-.header.scrolled .logo__text {
-    color: var(--clr-gray-800);
-}
-
-.logo__dot {
-    color: var(--clr-accent);
-}
 
 .nav__list {
     display: flex;
@@ -634,6 +615,11 @@ ul {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: var(--space-xl);
+}
+
+/* 4-column grid variant (trips page) */
+.journeys__grid--4 {
+    grid-template-columns: repeat(4, 1fr);
 }
 
 .journey-card {
@@ -1219,6 +1205,10 @@ ul {
         grid-template-columns: repeat(2, 1fr);
     }
 
+    .journeys__grid--4 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
     .offbeat__inner {
         gap: var(--space-2xl);
     }
@@ -1314,7 +1304,8 @@ ul {
     /* Grids */
     .journeys__grid,
     .romantic__grid,
-    .testimonials__grid {
+    .testimonials__grid,
+    .journeys__grid--4 {
         grid-template-columns: 1fr;
     }
 
@@ -1418,8 +1409,10 @@ ul {
 }
 
 /* Active nav link */
+.scrolled-always .nav__link.active,
+.header.scrolled .nav__link.active,
 .nav__link.active {
-    color: var(--clr-accent) !important;
+    color: var(--clr-accent);
 }
 
 .nav__link.active::after {
@@ -1527,10 +1520,7 @@ ul {
     color: var(--clr-white);
 }
 
-/* 4-column grid variant */
-.journeys__grid--4 {
-    grid-template-columns: repeat(3, 1fr);
-}
+
 
 /* Features Grid */
 .features-grid {
@@ -1830,3 +1820,48 @@ ul {
         grid-template-columns: 1fr;
     }
 }
+
+/* ================================================================
+   ACCESSIBILITY
+   ================================================================ */
+
+/* Reduced motion for users who prefer it */
+@media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+
+    .fade-up {
+        opacity: 1;
+        transform: none;
+    }
+
+    .hero__bg-img {
+        transform: none !important;
+    }
+}
+
+/* Keyboard focus styles */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+    outline: 2px solid var(--clr-secondary);
+    outline-offset: 3px;
+    border-radius: 4px;
+}
+
+.btn:focus-visible {
+    outline: 2px solid var(--clr-accent);
+    outline-offset: 3px;
+    box-shadow: 0 0 0 4px rgba(253, 231, 42, 0.25);
+}
+
+.nav__link:focus-visible {
+    outline: 2px solid var(--clr-accent);
+    outline-offset: 4px;
+}
